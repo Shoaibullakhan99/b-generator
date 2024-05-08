@@ -29,14 +29,15 @@ function App() {
     pdf.text('Invoice', 20, 20);
 
     // //Adding items to pdf
-    // items.forEach((item, index) => {
-    //   const ypos = 30 + index * 10;
-    //   pdf.text(
-    //     `Item: ${item.item},
-    //          Quantity: ${item.quantity},
-    //     `
-    //   )
-    // })
+    items.forEach((item, index) => {
+      const ypos = 30 + index * 10;
+      pdf.text(
+        `Item: ${item.item},
+             Quantity: ${item.quantity},
+             Price: ${item.price}
+        `, 20, ypos
+      );
+    })
     //Adding total amount to pdf
     const TotalAmount = calculateTotalAmount();
     pdf.text( `Total Amount: $${TotalAmount.toFixed(2)}`, 20, 180);
