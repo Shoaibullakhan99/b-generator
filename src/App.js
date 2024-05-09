@@ -52,7 +52,7 @@ function App() {
         <BillDetails  onAddItem={handleAddition}/>
         <ItemList items={items} onDeleteItem={handleDeletion} />
         <TotalAmount total={calculateTotalAmount()} />
-        <button onClick={handleDownloadPDF}>Download PDF</button>
+        <button className="download-btn" onClick={handleDownloadPDF}>Download PDF</button>
     </div>
   );
 }
