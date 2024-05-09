@@ -5,6 +5,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
+  margin-top: 100px;
   padding: 0;
   background-color: #f4f4f4;
 }
@@ -25,6 +26,7 @@ label {
 
 input {
   background-color: #4caf50;
+  color: #fff;
   padding: 8px;
   margin-bottom: 15px;
   box-sizing: border-box;
@@ -56,4 +58,17 @@ button:hover {
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
+}
+
+.download-btn {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.download-btn:hover{
+  background-color: #005684;
 }
