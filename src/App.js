@@ -16,6 +16,7 @@ function App() {
     const updateItems = [...items];
     updateItems.splice(index, 1);
     setItems(updateItems);
+    console.log(items)
   }
 
   const calculateTotalAmount = () => {
